@@ -1,0 +1,290 @@
+/* ================================
+   SafePyScript - Main Styling
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background: #0f172a;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 10%;
+    gap: 60px;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 19px;
+    color: #dbeafe;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #38bdf8;
+    color: #082f49;
+}
+
+button:hover {
+    background: #7dd3fc;
+}
+
+button.secondary {
+    background: transparent;
+    color: white;
+
+    border: 1px solid #94a3b8;
+}
+
+button.secondary:hover {
+    background: white;
+    color: #0f172a;
+}
+
+
+/* ================================
+   SECURITY CARD
+   ================================ */
+
+.hero-card {
+    width: 350px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #dbeafe;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: #bae6fd;
+}
+
+
+/* ================================
+   HOW IT WORKS
+   ================================ */
+
+.about {
+    padding: 80px 10%;
+
+    text-align: center;
+
+    background: white;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.step {
+    width: 30%;
+
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step > div {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #64748b;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background: #0f172a;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 18px 25px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        padding: 60px 25px;
+
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+}

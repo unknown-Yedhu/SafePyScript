@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analyze Code - SafePyScript</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            🔐 SafePyScript
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="analyze-page">
+
+        <div class="analyze-container">
+
+            <h1>Python Security Analyzer</h1>
+
+            <p class="subtitle">
+                Upload your Python file or paste your Python code below
+                to analyze it for security vulnerabilities.
+            </p>
+
+
+            <!-- File Upload -->
+
+            <div class="upload-section">
+
+                <h2>📁 Upload Python File</h2>
+
+                <input
+                    type="file"
+                    id="pythonFile"
+                    accept=".py"
+                >
+
+            </div>
+
+
+            <div class="or">
+                OR
+            </div>
+
+
+            <!-- Code Input -->
+
+            <div class="code-section">
+
+                <h2>💻 Paste Python Code</h2>
+
+                <textarea
+                    id="codeInput"
+                    placeholder="Paste your Python code here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Analyze Button -->
+
+            <button
+                class="analyze-button"
+                onclick="analyzeCode()"
+            >
+                🔍 Analyze Code
+            </button>
+
+
+            <!-- Status -->
+
+            <div id="statusMessage"></div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 SafePyScript | Secure Software Development Project
+        </p>
+
+    </footer>
+
+
+    <script src="analyze.js"></script>
+
+</body>
+
+</html>
